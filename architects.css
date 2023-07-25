@@ -170,14 +170,22 @@ main {
     padding-left: 21px;
 }
 
+.features-img img {
+    height: 90%;
+    margin-left: 100px;
+}
+
 .year-badge {
     border-radius: 8px;
     background: #FF900E;
-    width: 342px;
+    width: 340px;
     height: 200px;
     color: #FFF;
     padding: 42px;
     text-align: center;
+    position: relative;
+    bottom: 110px;
+
 }
 
 .year-badge h2 {
@@ -221,7 +229,8 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
     }
 
@@ -237,6 +246,19 @@ main {
 
     .facts-card-container {
         gap: 20px;
+    }
+
+    .facts h3,
+    p {
+        text-align: center;
+    }
+    .features-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .year-badge{
+        position: static;
+        max-width: 300px;
     }
 }
 
@@ -259,5 +281,8 @@ main {
 
     .facts-card-container {
         gap: 30px;
+    }
+    .features .section-title{
+        margin-bottom: 110px;
     }
 }
